@@ -1,4 +1,4 @@
-package com.wu.study.netty.basic;
+package com.wu.study.netty.basic.bytebuffer;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package com.wu.study.netty.basic;
+package com.wu.study.netty.basic.bytebuffer;
 
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
