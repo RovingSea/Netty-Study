@@ -38,6 +38,8 @@ public class ServerTest {
                     log.debug("before read... {}", channel);
                     // 处理通道中的数据
                     // 当通道中没有数据可读时，会阻塞线程
+                    // 当第一个线程建立连接并且发送第一次数据后，再发第二次第三次不会被服务器收到
+                    // 因为受 SocketChannel sc = server.accept(); 语句的影响，必须需要一个新的客户端来唤醒线程向下执行
                     channel.read(buffer);
                     buffer.flip();
                     ByteBufferUtil.debugRead(buffer);
