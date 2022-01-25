@@ -9,6 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <groupId>com.wu.study.netty.basic</groupId>
     <artifactId>basic</artifactId>
 
     <name>basic</name>
