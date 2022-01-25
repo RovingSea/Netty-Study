@@ -32,13 +32,11 @@ public class IOTaskServerTest {
                             public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
                                 ByteBuf buf = (ByteBuf) msg;
                                 log.debug(buf.toString(Charset.defaultCharset()));
-                                super.channelRead(ctx, msg);
                             }
                         });
                     }
                 })
                 .bind(8080);
-
     }
 }
 
