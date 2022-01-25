@@ -37,6 +37,7 @@ public class DivisionOfLaborTest {
                                 log.debug(buf.toString(Charset.defaultCharset()));
                                 ctx.fireChannelRead(msg);
                             }
+                            // 切换为另一个 EventLoopGroup
                         }).addLast(group, "handler2", new ChannelInboundHandlerAdapter() {
                             @Override
                             public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
