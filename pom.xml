@@ -11,6 +11,7 @@
   <modules>
     <module>basic</module>
       <module>Introductory</module>
+      <module>advance</module>
   </modules>
 
   <name>Netty-Study</name>
